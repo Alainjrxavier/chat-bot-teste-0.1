@@ -1,1 +1,3 @@
-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
+versão inicial do chatbot de ordem de serviço utilizando chatgpt, os seguintes comandos devem ser utilizados no terminal:
+pip install gradio
+pip install openai
