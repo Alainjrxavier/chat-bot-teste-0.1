@@ -2,13 +2,13 @@ import gradio as gr
 from openai import OpenAI
 
 # Configuração do cliente OpenAI
-client = OpenAI(api_key="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")  # Substitua pela sua chave da OpenAI
+client = OpenAI(api_key="A")  # Substitua pela sua chave da OpenAI
 
 # Função para processar a entrada do usuário e retornar a resposta
 def CustomChatGPT(user_input):
     # Mensagens iniciais para cada interação (evita acúmulo de mensagens)
     messages = [
-        {"role": "system", "content": "Este chatbot é um suporte de ordem de serviço para uma empresa de TI em portugues, não reponda nada além do que é relacionado á isso"},
+        {"role": "system", "content": "You are a financial expert that specializes in real estate investment and negotiation"},
         {"role": "user", "content": user_input}
     ]
     
@@ -28,8 +28,8 @@ iface = gr.Interface(
     fn=CustomChatGPT,  # Função que será chamada quando o usuário enviar uma mensagem
     inputs=gr.Textbox(placeholder="Digite sua pergunta...", label="Sua mensagem"),  # Caixa de texto para entrada do usuário
     outputs=gr.Textbox(label="Resposta do chatbot"),  # Caixa de texto para mostrar a resposta
-    title="Chatbot teste 1.0 alain",  # Título da interface
-    description="Este chatbot é um suporte de ordem de serviço para uma empresa de TI em portugues",  # Descrição do chatbot
+    title="Chatbot Financeiro",  # Título da interface
+    description="Este chatbot é um especialista em investimentos imobiliários e negociação. Pergunte-me qualquer coisa sobre o assunto!",  # Descrição do chatbot
 )
 
 # Lança o site de chatbot
