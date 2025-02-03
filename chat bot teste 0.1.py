@@ -8,7 +8,7 @@ client = OpenAI(api_key="A")  # Substitua pela sua chave da OpenAI
 def CustomChatGPT(user_input):
     # Mensagens iniciais para cada interação (evita acúmulo de mensagens)
     messages = [
-        {"role": "system", "content": "You are a financial expert that specializes in real estate investment and negotiation"},
+        {"role": "system", "content": "Você é um chabot de uma empresa de TI, especializado em atender as ordens de serviços dos clientes, se limite á isso."},
         {"role": "user", "content": user_input}
     ]
     
@@ -28,8 +28,8 @@ iface = gr.Interface(
     fn=CustomChatGPT,  # Função que será chamada quando o usuário enviar uma mensagem
     inputs=gr.Textbox(placeholder="Digite sua pergunta...", label="Sua mensagem"),  # Caixa de texto para entrada do usuário
     outputs=gr.Textbox(label="Resposta do chatbot"),  # Caixa de texto para mostrar a resposta
-    title="Chatbot Financeiro",  # Título da interface
-    description="Este chatbot é um especialista em investimentos imobiliários e negociação. Pergunte-me qualquer coisa sobre o assunto!",  # Descrição do chatbot
+    title="versão 1.0 do chatbot de ordem de serviço de ti by alain",  # Título da interface
+    description="Você é um chabot de uma empresa de TI, especializado em atender as ordens de serviços dos clientes, se limite á isso.",  # Descrição do chatbot
 )
 
 # Lança o site de chatbot
