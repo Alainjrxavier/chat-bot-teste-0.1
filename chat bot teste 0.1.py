@@ -2,7 +2,7 @@ import gradio as gr
 from openai import OpenAI
 
 # Configuração do cliente OpenAI
-client = OpenAI(api_key="")  # Substitua pela sua chave da OpenAI
+client = OpenAI(api_key="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")  # Substitua pela sua chave da OpenAI
 
 # Função para processar a entrada do usuário e retornar a resposta
 def CustomChatGPT(user_input):
