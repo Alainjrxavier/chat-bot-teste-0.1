@@ -24,3 +24,4 @@ Optei pelo telegram pelo fator de ser mais simples do que o whatsapp para implem
 - Como conectar o chatbot ao meu banco do SQLITE
 - Como treinar meu chatbot com meus dados
 - Como preencher dados do usuário no meu banco de dados através de perguntas específicas e em tempo real
+- Para segurança das API Keys, implementar o dot env
