@@ -14,3 +14,13 @@ Por enquanto, para meus próximos passos, é necessário colocar o chatbot em um
 - Alimentá-lo com o conteúdo da empresa
 - Conectá-lo ao banco de dados da empresa
 - Decidir em qual aplicação ele será executado, ou seja, entre whatsapp, telegram, etc.
+
+Relatório de andamento do projeto 10/01/2025:
+
+Após feedbacks do professor, foi perceptivel que meu chatbot estava muito geral, e que eu precisava deixá-lo mais relacionado ao meu contexto pessoal e da empresa com a qual estou trabalhando neste projeto, por isso, essa semana decidi os seguintes passos:
+Optei pelo telegram pelo fator de ser mais simples do que o whatsapp para implementar, e optei pelo SQLITE também por ser uma forma mais simples e por ter bibliotecas de fácil uso dentro do python, mas que assim como o mysql, é um banco relacional e funciona para meu propósito.
+- Implementar o chatbot no telegram
+- Criar um banco de dados funcional no SQLITE
+- Como conectar o chatbot ao meu banco do SQLITE
+- Como treinar meu chatbot com meus dados
+- Como preencher dados do usuário no meu banco de dados através de perguntas específicas e em tempo real
