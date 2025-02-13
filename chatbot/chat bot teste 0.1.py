@@ -89,7 +89,7 @@ def insert_client_data(nome, telefone, equipamento, modelo_equipamento, problema
     
     conn.commit()
     conn.close()
-    return "Atendimento registrado com sucesso."
+    return "Atendimento registrado com sucesso. Nosso suporte entrará em contato para finalizar seu atendimento!"
 
 # Função para processar perguntas gerais sobre TI
 def CustomChatGPT(user_input):
@@ -154,7 +154,7 @@ async def handle_message(update: Update, context: ContextTypes.DEFAULT_TYPE):
         # Responder ao usuário com o resultado do registro
         await update.message.reply_text(result)
 
-        if result == "Atendimento registrado com sucesso.":
+        if result == "Atendimento registrado com sucesso. Nosso suporte entrará em contato para finalizar seu atendimento!":
             await update.message.reply_text("Agora o chatbot voltará a responder perguntas gerais sobre TI.")
             context.user_data.clear()  # Resetar os dados do atendimento
 
