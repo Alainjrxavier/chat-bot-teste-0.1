@@ -25,3 +25,8 @@ Optei pelo telegram pelo fator de ser mais simples do que o whatsapp para implem
 - Como treinar meu chatbot com meus dados
 - Como preencher dados do usuário no meu banco de dados através de perguntas específicas e em tempo real
 - Para segurança das API Keys, implementar o dot env
+
+Relatório de andamento do projeto 13/01/2025:
+
+Após testes, o chatbot foi integralizado ao instagram através da api do @BotFather, também consegui conectar o chatbot com sucesso ao banco de dados e treiná-lo com meus dados
+O dotenv também foi implementado
