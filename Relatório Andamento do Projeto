@@ -30,3 +30,7 @@ Relatório de andamento do projeto 13/01/2025:
 
 Após testes, o chatbot foi integralizado ao instagram através da api do @BotFather, também consegui conectar o chatbot com sucesso ao banco de dados e treiná-lo com meus dados
 O dotenv também foi implementado
+
+Relatório de andamento do projeto 17/01/2025:
+
+Banco de dados do SQLITE foi substituído pelo banco de dados do MYSQL, e foram feitas otimizações no atendimento do bot.
