@@ -6,10 +6,11 @@ PRÉ-REQUISITOS PARA O CÓDIGO FUNCIONAR:
 4 - DADOS PARA TREINAMENTO DO CHATBOT EM .jsonl (no código o arquivo consta com o nome meus_dados.jsonl)
 * PREENCHER OS CAMINHOS CORRETOS PARA CADA ARQUIVO ONDE É PEDIDO NO CODIGO ( exemplo: r"E:\chatbot\meus_dados.jsonl")
 
-Para executar o código, siga os seguintes passos:
+Para executar o código, voce precisa instalar algumas dependecias, utilize os seguintes comandos no terminal:
 
-1 - no terminal, executar o comando pip install python-telegram-bot
-2 - no terminal, executar o comando pip install openai
+pip install mysql-connector-python
+pip install openai
+pip install python-telegram-bot
 
 *a API da openai é paga e deve ser gerada da seguinte forma:
 1 - Crie uma conta e logue na OpenAI Platform: https://platform.openai.com
