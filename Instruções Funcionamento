@@ -2,7 +2,7 @@ Versão 1.0 do chatbot em python. O código foi feito no visual studio code.
 PRÉ-REQUISITOS PARA O CÓDIGO FUNCIONAR:
 1 - API DA OPENAI
 2 - API DO BOTFATHER NO TELEGRAM
-3 - UM BANCO DE DADOS .db feito em SQLITE (no código o arquivo consta com o nome empresa.db)
+3 - UM BANCO DE DADOS .db do MYSQL
 4 - DADOS PARA TREINAMENTO DO CHATBOT EM .jsonl (no código o arquivo consta com o nome meus_dados.jsonl)
 * PREENCHER OS CAMINHOS CORRETOS PARA CADA ARQUIVO ONDE É PEDIDO NO CODIGO ( exemplo: r"E:\chatbot\meus_dados.jsonl")
 
