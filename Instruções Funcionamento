@@ -29,6 +29,9 @@ DB_CONFIG = {
 linha 11 - env_path = r"C:\Users\User\OneDrive\Documentos\apis.env"
 linha 52 - training_data_path = r"C:\Users\User\OneDrive\Documentos\meus_dados.jsonl"
 
+6 - Logue no telegram (Desktop, Android ou IOS) e inicie uma conversa com @username do seu bot, e caso você não lembre, digite /mybots no chat com o @BotFather que ele lhe fornecerá as informações do seu bot
+
+7 - Se tudo ocorrer bem, o bot irá lhe responder no chat do telegram.
 
 COMO CONSEGUIR AS APIS DA OPENAI E BOTFATHER:
 
