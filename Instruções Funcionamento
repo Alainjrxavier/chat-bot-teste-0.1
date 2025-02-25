@@ -13,7 +13,9 @@ pip install openai
 pip install python-telegram-bot
 pip install python-dotenv
 
-2 - Execute o arquivo "chatbot_db.sql" no seu espaço do MYSQL, para que as tabelas sejam criadas automaticamente (o nome do banco TEM que ser chatbot_db)
+1.1 - Insira suas APIS no arquivo "apis.env" (instruções no final desta página)
+
+2 - Execute o arquivo "chatbot_db.sql" no seu espaço do MYSQL, para que as tabelas sejam criadas automaticamente (recomendo o nome do banco de dados ser chatbot_db, mas pode ser alterado na parte do código mostrada abaixo. Além disso, uma tabela Cliente deve ser criada, mas que será criada de forma automática com o arquivo .sql)
 
 3 - Coloque suas informações para conexão com o MYSQL na linha 20 em:
 DB_CONFIG = {
@@ -23,13 +25,15 @@ DB_CONFIG = {
     "database": "chatbot_db"
 }
 
-4 - Insira suas APIS dentro do arquivo "apis.env"
+4 - as apis devem parecer assim no "apis.env"
+    OPENAI_API_KEY=SUA_API_AQUI
+    TELEGRAM_TOKEN=SUA_API_AQUI
 
 5 - No código, tenha certeza de definir os caminhos corretos para onde estiver os arquivos "apis.env" e "meus_dados.jsonl" em sua máquina nas seguintes linhas:
 linha 11 - env_path = r"C:\Users\User\OneDrive\Documentos\apis.env"
-linha 52 - training_data_path = r"C:\Users\User\OneDrive\Documentos\meus_dados.jsonl"
+linha 52 - training_data_path = r"C:\Users\User\OneDrive\Documentos\meus_dados.jsonl" (ESTE ARQUIVO É OPCIONAL)
 
-6 - Logue no telegram (Desktop, Android ou IOS) e inicie uma conversa com @username do seu bot, e caso você não lembre, digite /mybots no chat com o @BotFather que ele lhe fornecerá as informações do seu bot
+6 - Logue no telegram (Desktop, Android ou IOS) e inicie uma conversa com @username do seu bot, e caso você não lembre, digite /mybots no chat com o @BotFather que ele lhe fornecerá as informações, juntamente ao nome do seu bot
 
 7 - Se tudo ocorrer bem, o bot irá lhe responder no chat do telegram.
 
